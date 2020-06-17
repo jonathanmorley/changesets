@@ -112,7 +112,6 @@ export default async function applyReleasePlan(
     let parsedConfig = prettier.format(JSON.stringify(packageJson), {
       ...prettierConfig,
       filepath: pkgJSONPath,
-      parser: "json",
       printWidth: 20
     });
 
